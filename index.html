@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily's Cafe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/19/12/54/drink-1839134_640.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    color: white;
+    scroll-behavior: smooth; 
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+section {
+    height: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid white;
+}
+th {
+    background: rgba(255, 255, 0, 0.3);
+    font-size: 1.5em;
+}
+.menu-image {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+.contact-info i {
+    margin-right: 10px;
+    color: yellowgreen;
+}
+footer {
+background-color: black;
+color: white;
+text-align: center;
+padding: 20px 0;
+font-size: 18px;
+}
+
+        footer a {
+        color: yellowgreen;
+        text-decoration: none;
+        font-weight: bold; 
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    footer .social-media {
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer .social-media a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    footer .social-media a:hover {
+        transform: scale(1.2);
+    }
+
+
+    </style>
+  
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Lily's Cafe</h1>
+        <p>If you want to enjoy some good coffee, homemade banquet and enjoy a warm environment, Lily's Café is definitely the place! Located in Nairobi Town, the perfect nook for both the coffee lover or food lover. Lily’s Café has a relaxing vibe for a casual meetup, remote work, or a bit of quiet indulgence, with a menu of fresh brews, ample breakfast fare and desserts. Whether for a fuel-up espresso run, or a full-blown brunch affair, Lily’s Café promises a good time.</p>
+    </section>
+
+    <section id="menu">
+        <h1>Our Menu</h1>
+
+        <h2>Breakfast</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <img src="https://i.pinimg.com/236x/17/55/c1/1755c145c0c59f056f4d3835be0aabf0.jpg" alt="Breakfast" class="menu-image">
+                </td>
+                <td>Pancakes</td>
+                <td>$5.99</td>
+            </tr>
+            <tr>
+                <td>French Toast</td>
+                <td>$6.49</td>
+            </tr>
+            <tr>
+                <td>Omelette</td>
+                <td>$5.99</td>
+            </tr>
+            <tr>
+                <td>Waffles</td>
+                <td>$6.99</td>
+            </tr>
+            <tr>
+                <td>Avocado Toast</td>
+                <td>$7.49</td>
+            </tr>
+        </table>
+
+        <h2>Lunch</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <img src="https://i.pinimg.com/236x/35/31/72/353172c5c29a44ed350f4a02fa4ef632.jpg" alt="Lunch" class="menu-image">
+                </td>
+                <td>Grilled Chicken</td>
+                <td>$8.99</td>
+            </tr>
+            <tr>
+                <td>Beef Burger</td>
+                <td>$9.49</td>
+            </tr>
+            <tr>
+                <td>Caesar Salad</td>
+                <td>$7.99</td>
+            </tr>
+            <tr>
+                <td>Spaghetti Bolognese</td>
+                <td>$10.99</td>
+            </tr>
+            <tr>
+                <td>Fish Tacos</td>
+                <td>$9.99</td>
+            </tr>
+        </table>
+
+        <h2>Drinks</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="5">
+                    <img src="https://i.pinimg.com/236x/c6/97/61/c697617ff32bff7669f6f7bd17d26c07.jpg" alt="Drinks" class="menu-image">
+                </td>
+                <td>Fresh Lemonade</td>
+                <td>$2.99</td>
+            </tr>
+            <tr>
+                <td>Iced Coffee</td>
+                <td>$3.49</td>
+            </tr>
+            <tr>
+                <td>Green Tea</td>
+                <td>$2.49</td>
+            </tr>
+            <tr>
+                <td>Orange Juice</td>
+                <td>$3.99</td>
+            </tr>
+            <tr>
+                <td>Hot Chocolate</td>
+                <td>$4.49</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We at Lily's Cafe are committed to providing an experience rather than just a dining area. Our warm and welcoming space, which is tucked away in the centre of Nairobi, is ideal for meeting friends, savouring home-cooked treats, or unwinding with a cup of freshly brewed coffee. Our menu offers a variety of dishes prepared with love and the best ingredients, whether you're here for a quick cappuccino, a filling breakfast, or a wonderful lunch. Our welcoming staff is dedicated to making each visit memorable and making you feel completely at home. Good feelings and making memories over a hot meal and a cup of coffee are more important to us at Lily's Cafe than simply serving delicious food.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We are located in Nairobi, Kenya.<br>
+           Phone: 0786789567<br>
+           Email: <a href="mailto:lilyscafe.com" style="color: yellowgreen;"><i class="bi bi-envelope"></i> lilyscafe.com</a><br>
+           Address: Nairobi, Kenya</p>
+        <p><a href="https://www.google.com/maps?q=Lily's+Restaurant,+Nairobi,+Kenya" target="_blank" style="color: yellowgreen;"><i class="bi bi-geo-alt"></i> Click here for map location</a></p>
+        <p><a href="mailto:lilyscafe.com" style="color: yellowgreen;"><i class="bi bi-envelope"></i> Email Us</a></p>
+    </section>
+    
+    <footer>
+        
+            <div class="social-media">
+                <a href="https://www.facebook.com/lilysrestaurant" target="_blank" style="color: yellowgreen;">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://twitter.com/lilysrestaurant" target="_blank" style="color: yellowgreen;">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/lilysrestaurant" target="_blank" style="color: yellowgreen;">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/lilysrestaurant" target="_blank" style="color: yellowgreen;">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        
+        <p> Lily's Cafe | <a href="#contact">Contact Us</a></p>
+    </footer>
+    
+
+</body>
+</html>
